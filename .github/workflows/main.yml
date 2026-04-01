@@ -1,0 +1,20 @@
+name: analytics-worker
+
+on:
+  push:
+    branches:
+      - 'analytics-worker'
+      - 'main'
+  pull_request:
+    branches:
+      - 'analytics-worker'
+      - 'main'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Run echo
+        run: echo "Hello from analytics-worker"
