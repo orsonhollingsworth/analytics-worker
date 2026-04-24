@@ -1,0 +1,26 @@
+{
+  "service": "analytics-worker",
+  "status": "healthy",
+  "timestamp": "2024-01-27T10:00:00Z",
+  "version": "1.2.3",
+  "uptime_seconds": 3600,
+  "cpu_usage": 0.15,
+  "memory_usage_mb": 256,
+  "active_tasks": 10,
+  "queue_size": 5,
+  "last_successful_task": "2024-01-27T09:59:55Z",
+  "errors_in_last_hour": 0,
+  "dependencies": {
+    "database": {
+      "status": "healthy",
+      "response_time_ms": 10
+    },
+    "message_queue": {
+      "status": "healthy",
+      "messages_pending": 0
+    }
+  },
+  "custom_metrics": {
+    "processed_events_per_second": 120.5
+  }
+}
